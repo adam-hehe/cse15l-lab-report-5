@@ -80,20 +80,12 @@ All three test cases are failing and it states `expected [1] but was [5]`. Maybe
 Try running your algorithm through jdb, use the `step` command and the `print` command to see if you notice any unintentional changes that happen with each loop iteration.
 
 **Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is.**
-![Image](image1.png)
+![Image](image3.png)
 5 showing up as the first element
 ![Image](image1.png)
 The array ends up being sorted in revese order
 
 It looks like the program is actually sorting the algorithm in reverse order, to fix this I changed the less than sign to a greater than sign in the if statement. The command lines I used to find the bug was to first start the jdb and `stop in SortingAlgorithm.bubbleSort`, then I used the step method and the check the values of each individual element in the array using `print arr[num]`.
-
-At the end, all the information needed about the setup including:
-1) The file & directory structure needed
-2) The contents of each file before fixing the bug
-3) The full command line (or lines) you ran to trigger the bug
-4) A description of what to edit to fix the bug
-
-You should actually set up and run the scenario from your screenshots. It should involve at least a Java file and a bash script. Describing the bug should involve reading some output at the terminal resulting from running one or more commands. Design an error that produces more interesting output than a single message about a syntax or unbound identifier error – showcase some interesting wrong behavior! Feel free to set this up by cloning and breaking some existing code like the grading script or code from class, or by designing something of your own from scratch, etc.
 
 ## Part 2 – Reflection
 
